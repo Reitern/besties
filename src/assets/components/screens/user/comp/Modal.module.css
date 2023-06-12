@@ -1,0 +1,115 @@
+.form{
+    width: 100%;
+}
+
+.modal_container{
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    overflow-y: hidden;
+}
+
+.modal_window{
+    max-width: 1120px;
+    width: 100%;
+    height: 55%;
+    background-color: #f1f3f5;
+    border-radius: 20px;
+}
+
+.modal_header{
+    position: relative;
+    height: 50px;
+}
+
+.cross{
+    width: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.modal_body{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 16pt;
+}
+
+.you_have{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text2{
+    font-size: 16pt;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.text3{
+    font-size: 16pt;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.comment_input{
+    margin-top: 10px;
+    width: calc(100% - 20px);
+    height: 200px;
+    border-radius: 20px;
+    font-size: 14pt;
+    padding: 10px;
+    resize: none;
+    outline: none;
+}
+
+.modal_footer{
+    margin-top: 10px;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.cancel{
+    border: none;
+    width: 100px;
+    height: 40px;
+    background-color: #f1f3f5;
+    color: #7a7a7a;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.send{
+    border: 2px solid #52a7ff;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #52a7ff;
+    color: #FFF;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.coin_count {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    font-weight: 500;
+}
+
+.coin {
+    margin-left: 10px;
+    width: 20px;
+    object-fit: contain;
+}

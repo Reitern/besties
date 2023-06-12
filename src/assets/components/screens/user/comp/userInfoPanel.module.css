@@ -1,0 +1,69 @@
+.user_info_panel {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-top: 48px;
+    display: flex;
+    flex-flow: row;
+}
+
+.user_img{
+background-color: #FFF;
+min-width: 340px;
+max-width: 340px;
+min-height: 340px;
+max-height: 340px;
+border-radius: 20px;
+}
+
+.img_u {
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+
+.user_info{
+margin-left: 40px;
+width: 100%;
+position: relative
+}
+
+.user_name{
+margin: 20px 0px;
+font-size: 24pt;
+}
+
+.user_about{
+font-weight: 500;
+font-size: 16pt;
+}
+
+.footer{
+position: absolute;
+bottom:0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+font-weight: 400;
+}
+
+.count_vote {
+display: flex;
+align-items: center;
+font-size: 16pt;
+}
+
+.like {
+margin-right: 10px;
+width: 25px;
+}
+
+.set_vote{
+border: 2px solid #52a7ff;
+border-radius: 20px;
+width: 150px;
+height: 40px;
+background-color: #52a7ff;
+color: #FFF;
+font-size: 14pt;
+cursor: pointer;
+}

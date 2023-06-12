@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Home from './assets/components/screens/home/home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Auth from './assets/components/screens/auth/Auth';
+import Vote from './assets/components/screens/vote/vote';
+import User from './assets/components/screens/user/user';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+    const [currentUser, setCurrentUser] = useState(null);
+    
+    return ( 
+        <div>
+            <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Auth user={currentUser} setCurrentUser={setCurrentUser}/>}/>
+                <Route path="/home" element={<Home user={currentUser}/>}/>
+                <Route path="/vote/:id" element={<Vote user={currentUser}/>}/>
+                <Route path="/vote/:voteId/user/:userId" element={<User user={currentUser}/>}/>
+
+                <Route path='*' element={<div>.................................Not Found.................................</div>} />
+            </Routes> 
+            </BrowserRouter>
+        </div>
+     );
 }
-
+ 
 export default App;

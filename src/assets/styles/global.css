@@ -1,0 +1,12 @@
+html {
+	overflow: auto;
+
+	&,body {
+		background: #f1f3f5;
+		font-family: 'Gilroy', serif;
+		font-style: normal;
+		font-weight: 700;
+		height: 100%;
+        margin: 0;
+	}
+}

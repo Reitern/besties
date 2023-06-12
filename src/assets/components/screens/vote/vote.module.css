@@ -1,0 +1,15 @@
+* {box-sizing: border-box;}
+
+h1 {
+    font-weight: 500;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.candidates {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    padding-top: 48px;
+}

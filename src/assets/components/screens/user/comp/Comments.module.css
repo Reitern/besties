@@ -1,0 +1,42 @@
+.comments {
+    max-width: 1120px;
+margin: 0 auto;
+padding-top: 48px;
+    height: 340px;
+    display: flex;
+flex-flow: column;
+}
+
+.vote_for{
+font-size: 18pt;
+font-weight: 500;
+}
+
+.comment{
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+background-color: #FFF;
+border-radius: 20px;
+padding: 20px;
+align-items: flex-start;
+margin-bottom: 20px;
+}
+
+.text{
+font-size: 16pt;
+font-weight: 400;
+}
+
+.coin_count {
+display: flex;
+flex-direction: row;
+align-self: flex-end;
+font-weight: 500;
+}
+
+.coin {
+margin-left: 10px;
+width: 20px;
+object-fit: contain;
+}

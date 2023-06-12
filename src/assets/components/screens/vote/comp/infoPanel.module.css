@@ -1,0 +1,35 @@
+.info_panel {
+
+    display: flex;
+    align-items: center;
+    padding-top: 48px;
+    justify-content: space-between;
+    
+    font-size: 14pt;
+    font-weight: 500;
+    
+    & > * {
+            margin-bottom: 50px;
+    }
+    }
+    
+    .votes {
+    display: flex;
+    align-items: center;
+    }
+    
+    .like {
+    margin-right: 10px;
+    width: 20px;
+    }
+    
+    .coin {
+    margin-left: 10px;
+    width: 20px; 
+    }
+    
+    .coin_count {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
